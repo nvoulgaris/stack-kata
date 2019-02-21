@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'jhugMeetup'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile(
+            [group: 'junit', name: 'junit', version: '4.12'],
+            [group: 'org.mockito', name: 'mockito-core', version: '2.24.0'],
+            [group: 'org.assertj', name: 'assertj-core', version: '3.11.1'],
+    )
+}
